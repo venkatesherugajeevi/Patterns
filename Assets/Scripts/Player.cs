@@ -17,8 +17,25 @@ public class Player : MonoBehaviour
     
     void LateUpdate()
     {
-        MoveDirection();
-      
+        // transform.Translate(transform.up*Time.deltaTime);
+
+
+        Vector3 direction = target.position - transform.position;
+
+        direction.y = 0;
+    
+        Quaternion lookRotaion=Quaternion.LookRotation(direction);
+
+        transform.rotation = Quaternion.Slerp(transform.rotation, lookRotaion, 0.5f);
+
+
+        transform.position=Vector3.
+            MoveTowards(transform.position, new Vector3(target.position.x,transform.position.y,target.position.z),movespeed*Time.deltaTime);
+        
+       // transform.position += new Vector3(0, 0, 1) * Time.deltaTime;
+        
+      //  MoveDirection();
+
     }
     void MoveDirection()
     {

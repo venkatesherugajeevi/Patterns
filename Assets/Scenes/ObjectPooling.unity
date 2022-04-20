@@ -5439,63 +5439,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1127728620}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 790f9e234bee2eb4db0e52c8cefaf104, type: 3}
+  m_Script: {fileID: 11500000, guid: b1aed32dc8be19f43a72cc689b2eaf02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: -2747468960494912444, guid: a673eb4fcde0da7499ce6daa2acfd11b, type: 3}
-  ShootPosition: {fileID: 127439312}
-  NoofBullets: 50
-  shootEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1127728622}
-        m_TargetAssemblyTypeName: Bulletmaxine, Assembly-CSharp
-        m_MethodName: EffectsPla
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1127728622}
-        m_TargetAssemblyTypeName: Bulletmaxine, Assembly-CSharp
-        m_MethodName: AudioPlay
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1106313259}
-        m_TargetAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
-        m_MethodName: Play
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 82736193}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_material
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 2100000, guid: bd38e5dc94c92ed44a647ab23ec956d7, type: 2}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+  shootPosiotion: {fileID: 127439312}
 --- !u!1 &1848611791
 GameObject:
   m_ObjectHideFlags: 0

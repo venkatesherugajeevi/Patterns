@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Pool;
 
 public class BulletScript : MonoBehaviour
 {
@@ -10,6 +11,13 @@ public class BulletScript : MonoBehaviour
 
     public event Healthattack attackEvent;
 
+    private IObjectPool<BulletScript> bpool;
+
+
+    public void SetPool(IObjectPool<BulletScript> pool)
+    {
+        bpool = pool;
+    }
     void Start()
     {
         
@@ -26,7 +34,8 @@ public class BulletScript : MonoBehaviour
     }
     void Distrybullet()
     {
-        gameObject.SetActive(false);
+        bpool.Release(this);
+        //gameObject.SetActive(false);
       //  Destroy(gameObject);
     }
 

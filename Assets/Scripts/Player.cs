@@ -29,8 +29,7 @@ public class Player : MonoBehaviour
         transform.rotation = Quaternion.Slerp(transform.rotation, lookRotaion, 0.5f);
 
 
-        transform.position=Vector3.
-            MoveTowards(transform.position, new Vector3(target.position.x,transform.position.y,target.position.z),movespeed*Time.deltaTime);
+       // transform.position=Vector3.MoveTowards(transform.position, new Vector3(target.position.x,transform.position.y,target.position.z),movespeed*Time.deltaTime);
         
        // transform.position += new Vector3(0, 0, 1) * Time.deltaTime;
         

@@ -629,7 +629,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 2
+      scalar: 1
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -5444,7 +5444,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: -2747468960494912444, guid: a673eb4fcde0da7499ce6daa2acfd11b, type: 3}
   ShootPosition: {fileID: 127439312}
-  NoofBullets: 10
+  NoofBullets: 50
   shootEvent:
     m_PersistentCalls:
       m_Calls:

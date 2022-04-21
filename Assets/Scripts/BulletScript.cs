@@ -13,6 +13,7 @@ public class BulletScript : MonoBehaviour
 
     private IObjectPool<BulletScript> bpool;
 
+    private Transform bulletTransform;
 
     public void SetPool(IObjectPool<BulletScript> pool)
     {
@@ -28,9 +29,13 @@ public class BulletScript : MonoBehaviour
         Invoke("Distrybullet", 5f);
     }
 
+    public void SetDirection(Transform dir)
+    {
+        bulletTransform = dir;
+    }
     void Update()
     {
-        transform.Translate(transform.forward * spped * Time.deltaTime);    
+       transform.Translate(transform.forward * spped * Time.deltaTime);    
     }
     void Distrybullet()
     {

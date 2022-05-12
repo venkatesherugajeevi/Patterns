@@ -30,10 +30,12 @@ public class NewPoolingSystem : MonoBehaviour
         bullet.transform.position = shootPosiotion.position;
         bullet.SetDirection(Player);
      //   bullet.transform.rotation = ;
-        //bullet.GetComponent<Rigidbody>().AddForce(Vector3.forward*10,ForceMode.Impulse);
+       // bullet.GetComponent<Rigidbody>().AddForce(shootPosiotion.forward*100,ForceMode.Impulse);
     }
     public void OnRelease(BulletScript bullet)
     {
+        bullet.GetComponent<Rigidbody>().velocity = Vector3.zero;
+        bullet.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
         bullet.gameObject.SetActive(false);
     }
     public void OnDestorBullet(BulletScript bullet)

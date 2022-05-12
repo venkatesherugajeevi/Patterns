@@ -35,10 +35,11 @@ public class BulletScript : MonoBehaviour
     }
     void Update()
     {
-       transform.Translate(transform.forward * spped * Time.deltaTime);    
+       //transform.Translate(transform.forward * spped * Time.deltaTime);    
     }
     void Distrybullet()
     {
+      
         bpool.Release(this);
         //gameObject.SetActive(false);
       //  Destroy(gameObject);
